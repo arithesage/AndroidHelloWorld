@@ -21,9 +21,9 @@ from shell import *
 class Files:
     AndroidManifest = "AndroidManifest.xml"
 
-    MainActivity = "MainActivity.kt"
-    AndroidTest = "ExampleInstrumentedTest.kt"
-    Test = "ExampleUnitTest.kt"
+    MainActivity = "MainActivity.java"
+    AndroidTest = "ExampleInstrumentedTest.java"
+    Test = "ExampleUnitTest.java"
     
     GradleSettings = "settings.gradle.kts"
     GradleBuild = "build.gradle.kts"
@@ -234,7 +234,7 @@ if __name__ == "__main__":
     if not DEBUGGING:
         argv = sys.argv
     else:
-        argv = (None, "me.arithesage.kotlin.android.testapp")
+        argv = (None, "me.arithesage.java.android.testapp")
 
     argc = len (argv[1:])
 
